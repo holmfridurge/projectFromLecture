@@ -46,9 +46,9 @@ namespace WebApplication
             // Add framework services.
             services.AddDbContext<AppDataContext>(options =>
                 options.UseSqlite($"Data Source={_rootFolder}/Courses.db"));
-
+            
             services.AddDbContext<AppDataContext>(options =>
-                options.UseSqlite($"Data Source={_rootFolder}/CoursesTemplate.db"));
+                options.UseSqlite($"Data Source={_rootFolder}/CourseTemplate.db"));
 
             services.AddMvc();
 
@@ -56,6 +56,7 @@ namespace WebApplication
             services.AddTransient<IEmailSender, AuthMessageSender>();
             services.AddTransient<ISmsSender, AuthMessageSender>();
             services.AddTransient<ICoursesService, CoursesService>();
+            services.AddTransient<ICourseTemplateService, CourseTemplateService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

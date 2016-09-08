@@ -19,7 +19,7 @@ namespace projectFromLecture.Services
                     where x.Semester == semester
                     select new CourseLiteDTO{
                         ID = x.ID,
-                        Name = x.Name,
+                        CourseID = x.CourseID,
                         Semester = x.Semester
                     }).ToList();
         }
@@ -31,7 +31,7 @@ namespace projectFromLecture.Services
                 select new CourseLiteDTO
                 {
                     ID = x.ID,
-                    Name = x.Name,
+                    CourseID = x.CourseID,
                     Semester = x.Semester
                 }).ToList();
         }

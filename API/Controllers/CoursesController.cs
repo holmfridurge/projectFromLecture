@@ -12,6 +12,7 @@ namespace projectFromLecture.API.Controllers
     public class CoursesController : Controller
     {
         public readonly ICoursesService _service;
+        public readonly ICourseTemplateService _ctService;
 
         public CoursesController(ICoursesService service)
         {
@@ -22,6 +23,12 @@ namespace projectFromLecture.API.Controllers
         public List<CourseLiteDTO> GetCourses()
         {
             return _service.GetCourses();
+        }
+
+        [HttpGet("/name", Name="GetName")]
+        public List<CourseTemplateLiteDTO> GetName()
+        {
+            return _ctService.GetCourseNames();
         }
 
         [HttpGet("{semester}", Name="GetCourseBySemester")]
