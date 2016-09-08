@@ -24,7 +24,7 @@ namespace projectFromLecture.API.Controllers
             return _service.GetCourses();
         }
 
-        [HttpGet("{semester}")]
+        [HttpGet("{semester}", Name="GetCourseBySemester")]
         public List<CourseLiteDTO> GetCoursesOnSemester(string semester = null)
         {
             return _service.GetCoursesBySemester(semester);
