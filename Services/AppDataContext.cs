@@ -11,6 +11,7 @@ namespace projectFromLecture.Services
     public class AppDataContext : DbContext
     {
         public DbSet<Course> Courses { get; set; }
+        public DbSet<CourseTemplate> CoursesTemplate { get; set; }
 
         public AppDataContext(DbContextOptions<AppDataContext> options)
             : base(options)

@@ -15,21 +15,13 @@ namespace projectFromLecture.Services
         
         public List<CourseLiteDTO> GetCoursesBySemester(string semester)
         {
-            /*return (from x in _db.Courses
-                    where x.Semester = semester
-                    select new CourseLiteDTO{
-                        ID = x.ID,
-                        Name = x.Name,
-                        Semester = x.Semester
-                    }).ToList();*/
-            
             return (from x in _db.Courses
-                    where x.Semester = semester
+                    where x.Semester == semester
                     select new CourseLiteDTO{
                         ID = x.ID,
                         Name = x.Name,
                         Semester = x.Semester
-                    }).All();
+                    }).ToList();
         }
 
 
