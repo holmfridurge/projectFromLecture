@@ -47,6 +47,9 @@ namespace WebApplication
             services.AddDbContext<AppDataContext>(options =>
                 options.UseSqlite($"Data Source={_rootFolder}/Courses.db"));
 
+            services.AddDbContext<AppDataContext>(options =>
+                options.UseSqlite($"Data Source={_rootFolder}/CoursesTemplate.db"));
+
             services.AddMvc();
 
             // Add application services.

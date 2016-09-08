@@ -8,6 +8,11 @@ namespace projectFromLecture.Models
     public class CourseTemplateLiteDTO
     {
         /// <summary>
+        /// Database-generated ID of the course
+        /// </summary>
+        public int ID { get; set; }
+
+        /// <summary>
         /// The name of the course.
         /// Example: "Web Services"
         /// </summary>
