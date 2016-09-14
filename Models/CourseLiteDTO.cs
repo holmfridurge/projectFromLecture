@@ -3,7 +3,7 @@
 namespace projectFromLecture.Models
 {
     /// <summary>
-    /// 
+    /// Stores information about a course as an object.
     /// </summary>
     public class CourseLiteDTO
     {
@@ -16,9 +16,10 @@ namespace projectFromLecture.Models
         /// The name of the course.
         /// Example: "Web Services"
         /// </summary>
-        public string CourseID { get; set; }
+        public string Name { get; set; }
 
         /// <summary>
+        /// The semester the course is taught.
         /// Example: 20163 -> fall 2016
         /// </summary>  
         public string Semester { get; set; }

@@ -118,9 +118,8 @@
 --reference:E:\school\Haust2016\VEFT\glosur\projectFromLecture\Models\bin\Debug\netstandard1.6\Models.dll
 E:\school\Haust2016\VEFT\glosur\projectFromLecture\Services\AppDataContext.cs
 E:\school\Haust2016\VEFT\glosur\projectFromLecture\Services\CoursesService.cs
-E:\school\Haust2016\VEFT\glosur\projectFromLecture\Services\CourseTemplateService.cs
 E:\school\Haust2016\VEFT\glosur\projectFromLecture\Services\ICoursesService.cs
-E:\school\Haust2016\VEFT\glosur\projectFromLecture\Services\ICourseTemplateService.cs
 E:\school\Haust2016\VEFT\glosur\projectFromLecture\Services\Library.cs
 E:\school\Haust2016\VEFT\glosur\projectFromLecture\Services\Entities\Course.cs
 E:\school\Haust2016\VEFT\glosur\projectFromLecture\Services\Entities\CourseTemplate.cs
+E:\school\Haust2016\VEFT\glosur\projectFromLecture\Services\Entities\Student.cs
